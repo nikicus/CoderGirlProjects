@@ -16,6 +16,9 @@ public class Calculator {
         // FIX the line below!
         return a * b;
     }
+    public static int divide(int j, int k){
+        return j/k;
+    }
 
     public static void main(String[] args)
 
@@ -43,5 +46,7 @@ public class Calculator {
         System.out.println("2 times 4 equals " + multiply(2, 4));
 // Now it's your turn! Create a divide() method and write some
 // print statements to test that it works right.
+        System.out.println("20 divide 2 equals " + divide(20, 2));
+        System.out.println("25 divide 5 equals " + divide(25, 5));
     }
 }
