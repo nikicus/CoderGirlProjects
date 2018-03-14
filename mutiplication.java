@@ -15,8 +15,8 @@ public class mutiplication
         System.out.println("Please ente a number between 1-20.");
         size = keyboard.nextInt();
     }
-    for(int firstNo = 1; firstNo <= size; firstNo++){
-        for(int secondNo = 1; secondNo <= size; secondNo++){
+    for(int firstNo = 0; firstNo <= size; firstNo++){
+        for(int secondNo = 0; secondNo <= size; secondNo++){
             System.out.println(firstNo + "x" + secondNo + "=" + (firstNo * secondNo +"\n"));
 
         }
