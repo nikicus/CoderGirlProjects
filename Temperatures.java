@@ -46,7 +46,7 @@ public class Temperatures {
         }
 
         for (int column = 0; column < 7; column++) {
-            String[] days = {"Sun: ", "Mon: ", "Tues: ", "Wed: ", "Thurs: ", "Fri: ", "Sat ",};
+            String[] days = {"Sun: ", "Mon: ", "Tues: ", "Wed: ", "Thurs: ", "Fri: ", "Sat: ",};
             System.out.print(days[column]);
 
             int sum = 0;
@@ -57,7 +57,7 @@ public class Temperatures {
             System.out.println(sum / 4);
         }
         for (int row = 0; row < 4; row++) {
-            String[] times = {"7 am ", "3 pm ", "7 pm ", "3 am "};
+            String[] times = {"7 am: ", "3 pm: ", "7 pm: ", "3 am: "};
             System.out.print(times[row]);
 
             int sum = 0;
@@ -67,5 +67,21 @@ public class Temperatures {
             }
             System.out.println(sum / 7);
         }
+           int sum = 0;
+        for (int row = 0; row < 4; row++) {
+            for (int column = 0; column < 7; column++) {
+
+                sum += (grid[row][column]);
+            }
+        }
+                System.out.print("weekly total " + sum / 28);
+
+
+        }
     }
-}
+
+
+
+
+
+
