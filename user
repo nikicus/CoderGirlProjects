@@ -1,0 +1,32 @@
+package MicroblogPart2;
+
+public class User {
+
+    private String UserName;
+    private String FirstName;
+    private String LastName;
+    private String websiteURL;
+    private String emailaddress;
+
+    public User(String userName,
+
+                String FirstName,
+                String LastName,
+                String websiteURL,
+                String email) {
+
+    }
+
+    {
+        this.UserName = UserName;
+        this.FirstName  = FirstName;
+        this.LastName = LastName;
+        this.websiteURL = websiteURL;
+        this.emailaddress = emailaddress;
+    }
+
+    public String getUserinfo() {
+        return UserName + "  " + websiteURL + "  " + emailaddress;
+    }
+
+}
