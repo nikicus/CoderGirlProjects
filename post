@@ -1,0 +1,23 @@
+package MicroblogPart1;
+
+public class Post2 {
+
+    private String UserName;
+    private String post;
+    private String Printpost;
+
+    public Post2(String userName, String post, String Printpost)
+    {
+        this.UserName = userName;
+        this.post = post;
+        this.Printpost = Printpost;
+    }
+
+    public String GetUserName() {
+        return this. UserName;
+    }
+    public void PrintPost () {
+        System.out.println("UserName:" + UserName+"\n" +"post: "+ post+ "\n");
+    }
+}
+
