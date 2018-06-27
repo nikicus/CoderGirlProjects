@@ -1,0 +1,82 @@
+package MicroblogPart2;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Menu {
+
+
+    public static void main(String args[]) {
+        Scanner keyboard = new Scanner(System.in);
+
+        ArrayList<User> users = new ArrayList();
+        ArrayList<User> posts = new ArrayList();
+
+        boolean exit = false;
+        int currentUser = 0;
+        int postOrder = 0;
+
+        while (!exit) {
+
+            System.out.println("Microblog");
+            System.out.println("Main Menu");
+            System.out.println("1 Create a new user");
+            System.out.println("2 Become an existing user");
+            System.out.println("3 Create a post as the current user");
+            System.out.println("4 Print all posts");
+            System.out.println("5 Print all users");
+            System.out.println("6 Finished");
+
+            if (users.size() > 0) {
+
+                System.out.println("Current User " + users.get(currentUser).getUserinfo() + " What's next?");
+            }
+            int selection = keyboard.nextInt();
+            if (selection == 1) {
+
+                keyboard.nextLine();
+                System.out.println("Enter Username");
+                String Username = keyboard.nextLine();
+                System.out.println("Enter Firstname");
+                String Firstname = keyboard.nextLine();
+                System.out.println("Enter Lastname");
+                String Lastname = keyboard.nextLine();
+                System.out.println("Enetr website URL");
+                String URL = keyboard.nextLine();
+                System.out.println("Enter Email address");
+                String email = keyboard.nextLine();
+
+                users.add(new User(Username, websiteURL,  Firstname, Lastname, emailaddress, ));
+
+            } else if (selection == 2) {
+                keyboard.nextLine();
+                System.out.println("Please select user below?");
+                for (int c = 0; c < users.size(); c++) {
+                    System.out.println((c + 1) + ")" + users.get(c).UserName());
+
+                }
+                currentUser = keyboard.nextInt() - 1;
+
+            } else if (selection == 3) {
+                keyboard.nextLine();
+                if (posts.size() > 0) {
+                    for (int c = posts.size() - 1; c >= 0; c--) {
+                        if (posts.get(c).UserName().equals(users.get(currentUser).UserName())) {
+                            posts.get(c).PrintPost();
+                            c = 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
