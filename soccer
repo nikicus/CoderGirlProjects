@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>creating HTML Form</title>
+</head>
+<body>
+<p> Please register below!</p>
+<form action= "process.php" method= "POST" <!=orGET=>
+username:<input type = "text" name = "username"/>
+<p></p>
+password:<input type = "password" name = "password"/>
+<br/>
+<br/>
+Gender:<input type = "radio" name "gender" > male
+<br/>
+<br/>
+Gender:<input type = "radio" name "gender" > female
+<br/>
+<br/>
+Favorite Position (Check all the apply!)
+<br/>
+<br/>
+<input type = "checkbox" name = "defense" /> defense
+<br/>
+<br/>
+<input type = "checkbox" name = "mid field" /> mid field
+<br/>
+<br/>
+<input type = "checkbox" name = "forward" /> forward
+<br/>
+<br/>
+<input type = "checkbox" name = "goalie" /> goalie
+<br/>
+<br/>
+</form>
+</body>
+</html>
